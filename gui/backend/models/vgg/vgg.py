@@ -1,32 +1,22 @@
 import ast
-import os
 import numpy as np
-from PIL import Image
-import tensorflow as tf
+
 from keras.preprocessing.sequence import pad_sequences
-from keras.preprocessing.text import Tokenizer
-from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
+from keras.preprocessing.image import img_to_array, load_img
 from keras.models import Model
-from keras.layers import Flatten, Dense, LSTM, Dropout, Embedding, Activation
-from keras.layers import concatenate, BatchNormalization, Input
+from keras.layers import Dense, LSTM, Dropout, Embedding
+from keras.layers import Input
 from keras.layers.merge import add
-from keras.utils import to_categorical
-from keras.applications.vgg16 import VGG16, preprocess_input
-from keras.utils import plot_model
 from keras.applications.vgg16 import VGG16, preprocess_input
 
-import matplotlib.pyplot as plt
-import cv2
-import string
-import time
 
-file = open("wordtoix.txt", "r")
+file = open("models/vgg/wordtoix.txt", "r")
 contents = file. read()
 wordtoix = ast. literal_eval(contents)
 file. close()
 #print(type(wordtoix))
 
-file = open("ixtoword.txt", "r")
+file = open("models/vgg/ixtoword.txt", "r")
 contents = file. read()
 ixtoword = ast. literal_eval(contents)
 file. close()
@@ -53,11 +43,6 @@ def encode(image):
     return vec.reshape(1,4096)
 
 
-pic = 'img.jpg'
-#img = preprocess_img(pic)
-img = encode(pic)
-#img.shape
-
 ip1 = Input(shape = (4096, ))
 fe1 = Dropout(0.2)(ip1)
 fe2 = Dense(256, activation = 'relu')(fe1)
@@ -70,7 +55,7 @@ decoder2 = Dense(256, activation = 'relu')(decoder1)
 outputs = Dense(1652, activation = 'softmax')(decoder2)
 model = Model(inputs = [ip1, ip2], outputs = outputs)
 
-model.load_weights('image-caption-weights8.h5')
+model.load_weights('models/vgg/image-caption-weights8.h5')
 
 def greedy_search(pic):
     max_length = 34
@@ -86,11 +71,10 @@ def greedy_search(pic):
             break
     final = start.split()
     final = final[1:-1]
-    #final = ' '.join(final)
     return final
 
 #greedy_search(img)
 
 def test(img):
-  img = encode(pic)
+  img = encode(img)
   return greedy_search(img)
