@@ -19,9 +19,9 @@ npm start
 ```
 
 ## Steps for Development
-- [.] Making GUI using HTML CSS .
-- [.] Add a python script to tap into external camera.
-- [.] Finishing the Image Captioning Model.
+- [x] Making GUI using HTML CSS .
+- [x] Add a python script to tap into external camera.
+- [x] Finishing the Image Captioning Model.
 - [ ] Make the Search Module.
 - [ ] Sort the backend.
 - [ ] Add some ease of access methods.(secondary)
