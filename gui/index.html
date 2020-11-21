@@ -7,26 +7,43 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href= "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>
+        body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 600% 600%;
+      animation: gradient 15s ease infinite;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="section no-pad-bot">
     <div class="container">
-      <div class="row center" style="padding-top: 25%;">
-        <img src="assets/logo.png">
+      <div class="row center" style="padding-top: 20%;">
+        <img src="assets/logo.png" style="width:40%">
       </div>
       <div class="row center">
-          <a href="" target="_blank" id="download-button" class="btn-large waves-effect waves-light red accent-1">Begin Captioning!</a>
+          <a href="menu.html" id="menu" class="btn-large waves-effect waves-light white black-text" style="width:50%">Begin Captioning!</a>
       </div>
       <div class="row center">
-        <a href="" target="_blank" id="download-button" class="btn-large waves-effect waves-light red accent-1">How does captioning work?</a>
+        <a href="" target="_blank" id="repo" class="btn-large waves-effect waves-light white black-text" style="width:50%">Check out our repo!!</a>
     </div>
     </div>
   </div>
-  <footer class="page-footer white" style="position:fixed;bottom:0;left:0;width:100%;"">
-    <div class="footer-copyright white">
-      <div class="container black-text">
-        <i class="material-icons large">github</i>
-      </div>
-    </div>
-  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
 </body>

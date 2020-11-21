@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href= "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>
+    body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 700% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="left" style="padding-top: 4%; padding-left: 10%;">  
+    <a href="menu.html" class="btn-small waves-effect waves-light white black-text"><-Back</a>
+  </div>
+  <div class="row right">
+        <img src="assets/logo.png" style="width: 80%; padding-top: 3%;">
+  </div>      
+  <div class="section no-pad-bot">
+    <div class="container">
+        <div class="input-field white black-text" >
+            <select>
+              <option value="" disabled selected>Choose your Time-Period</option>
+              <option value="1">5 Seconds</option>
+              <option value="2">10 Seconds</option>
+              <option value="3">15 Seconds</option>
+            </select>
+          </div>
+    </div>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+</body>
