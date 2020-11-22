@@ -1,7 +1,5 @@
-<h1 align="center"><b> TEAM CODEOVERFLOW INITIATIVE </b></h1>
-<p align="center">
-<img align="right" height="200" src="gui/assets/logo.png">
-</p><br/>
+# cap-bot||Team Missing Colon
+<img align="right" height="60" src="gui/assets/logo.png"><br/>
  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
  [![GitHub commits](https://img.shields.io/github/commits-since/Naereen/StrapDown.js/v1.0.0.svg)](https://github.com/aryankargwal/cap-bot/commit/)
  [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://github.com/aryankargwal/cap-bot/graphs/contributors/)
