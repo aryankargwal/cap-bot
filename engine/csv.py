@@ -1,5 +1,6 @@
-import vgg
-
+from vgg import *
+preds = []
+preds = test(pic)
 
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
@@ -7,9 +8,6 @@ import csv
 from itertools import chain 
 import pandas as pd
 from datetime import datetime
-
-preds = []
-preds = vgg.test(pic)
 
 tokenizer = Tokenizer(num_words=1000, oov_token='<UNK>')
 tokenizer.fit_on_texts(preds)
@@ -25,6 +23,7 @@ def preprocess(text):
 fields = ['id', 'w1','w2','w3','w4','w5','w6','w7','w8','w9','w10','time','camera'] 
 filename = "captions.csv"
 timimg = []
+keywords = ["a black beard"]
 
 now = datetime.now()
 current_time = now.strftime("%H:%M:%S")
@@ -67,6 +66,6 @@ def checkInFirst(a, b):
 #Calling function 
 def generate(df):
   for i in df.index:
-    res = checkInFirst(df.iloc[i], test_preprocess(rand))
+    res = checkInFirst(df.iloc[i], test_preprocess(keywords))
     if res == True:
-      return(i)
+      return df.loc[0:0, ['time', 'camera']]
