@@ -68,4 +68,4 @@ def generate(df):
   for i in df.index:
     res = checkInFirst(df.iloc[i], test_preprocess(keywords))
     if res == True:
-      return df.loc[0:0, ['time', 'camera']]
+      return df.loc[i:i, ['time', 'camera']]
