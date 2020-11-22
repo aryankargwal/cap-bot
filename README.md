@@ -63,7 +63,7 @@ This project is under the Apache License. See [LICENSE](LICENSE) for Details.
 
 </td>
    
-   <td align="center"><a href="https://media-exp1.licdn.com/dms/image/C5103AQE5CkDeJQ8mmQ/profile-displayphoto-shrink_800_800/0?e=1611792000&v=beta&t=4xDqX13gQDrCEXJjKdXRnyDBwuWdeRi4PbCAJe5S9tc" width="210px;" height="230px;"  alt=""/><br /><sub><b>Indira Dutta</b></sub></a><br />
+   <td align="center"><img src="https://media-exp1.licdn.com/dms/image/C5103AQE5CkDeJQ8mmQ/profile-displayphoto-shrink_800_800/0?e=1611792000&v=beta&t=4xDqX13gQDrCEXJjKdXRnyDBwuWdeRi4PbCAJe5S9tc" width="210px;" height="230px;"  alt=""/><br /><sub><b>Indira Dutta</b></sub></a><br />
 <p align="center">
     
    <a href="https://www.linkedin.com/in/indira-dutta-775445197/" alt="Linkedin"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/linkedin-fill.svg"></a>
