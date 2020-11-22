@@ -1,9 +1,17 @@
-# cap-bot <img align="right" height="60" src="gui/assets/logo.png">
- [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) <br/>
-A one stop GUI to provide multiple Image-Captioning application with ease and efficiency.
-## Motivation
-With the rise of automated transportation there has arisen a need of having some kind of logging system for the vehicle to describe the surroundings in case of accidents. We here are aiming to make a GUI which will be able to take in input from an external camera and perform image captioning on it to save it in logs in case of such incidents and give the owners a better understanding of any kind of damage or loss in their automated vehicle. 
-Our secondary features inlvolve implementing the same kind of system for CCTV cameras to make incident mapping easy by using keywords to jump to time frames from the log.
+# cap-bot||Team Missing Colon
+<img align="right" height="60" src="gui/assets/logo.png"><br/>
+ [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+ [![GitHub commits](https://img.shields.io/github/commits-since/Naereen/StrapDown.js/v1.0.0.svg)](https://github.com/aryankargwal/cap-bot/commit/)
+ [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://github.com/aryankargwal/cap-bot/graphs/contributors/)
+ <br/>
+## Problem Statement
+***‘OH NO! Where is my laptop?? Who stole it??’***
+***‘Bro don't worry go to the warden he will help you with the CCTV Footage.’***
+Now or then you might have found yourself in a situation where you get your *life* essentials stolen and are directed to your CCTV operator but this can be a huge hassle when you belong to colleges with ***Huge*** Campuses. Now you can do the foolish thing by checking the hundreds of hours of footage through the dozens of cameras or you can use our ***Project***!!
+
+## Solution
+
+
 ## Running the App
 Firstly, let us enter the folder for the GUI.
 ```

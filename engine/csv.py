@@ -1,6 +1,5 @@
-from vgg import *
-preds = []
-preds = test(pic)
+import vgg
+
 
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
@@ -8,6 +7,9 @@ import csv
 from itertools import chain 
 import pandas as pd
 from datetime import datetime
+
+preds = []
+preds = vgg.test(pic)
 
 tokenizer = Tokenizer(num_words=1000, oov_token='<UNK>')
 tokenizer.fit_on_texts(preds)
