@@ -1,9 +1,11 @@
 gui/node_modules
 
-gui/backend/*.jpeg
-gui/backend/*.jpg
+# gui/backend/*.jpeg
+# gui/backend/*.jpg
+
+
 
 gui/backend/images/*.jpeg
 gui/backend/images/*.jpg
 
-gui/backend/test.py
+# gui/backend/test.py
