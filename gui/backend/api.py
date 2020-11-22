@@ -4,7 +4,7 @@ from numpy.lib.type_check import imag
 import pandas as pd
 from flask import Flask, flash, request
 from pyngrok import ngrok
-from tokener import tlk
+from tokener import *
 # from flask import redirect, url_for 
 from werkzeug.utils import secure_filename 
 import secrets
@@ -97,14 +97,26 @@ def upload_file():
             cpt = update_csv(img_path)
             return str(cpt), 200
 
-@app.route('/search/', methods=['GET'])
-def img_search(img_id):
-    if request.method == 'GET':
+@app.route('/search', methods=['POST'])
+def img_search():
+    fd = None
+    if request.method == 'POST':
         if app.config['CSV_FILE'] !='':
-            keyword = request.args['keyword']
+            # keyword = request.args['keyword']
+            keywords = ['beard', 'man']
+            df = pd.read_csv(os.path.join(app.config['DATABASE_FOLDER'],'trial.csv'))
+            
+            for i in df.index:
+                res = checkInFirst(df.iloc[i], keywords)
+                if res == True:
+                    fd = df.loc[i:i, ['time', 'camera']]
+                    fd = fd.to_string()
+                    print(fd)
+                    print(type(fd))
+                    break
+                # return fd, 200
+    return str(fd), 201
 
-            df = pd.read_csv(app.config['CSV_FILE'])
-            df.loc[img_id, 'caption']
 
  
 if __name__ == '__main__': 
