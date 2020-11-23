@@ -3,12 +3,12 @@
  <br/>
 ## Problem Statement
 ***‘OH NO! Where is my laptop?? Who stole it??’***<br/>
-***‘Bro don't worry go to the warden he will help you with the CCTV Footage.’***<br/>
-Now or then you might have found yourself in a situation where you get your *life* essentials stolen and are directed to your CCTV operator but this can be a huge hassle when you belong to colleges with ***Huge*** Campuses. Now you can do the foolish thing by checking the hundreds of hours of footage through the dozens of cameras or you can use our ***Project***!!
+***‘Bro don't worry go to the warden, he will help you with the CCTV Footage.’***<br/>
+Now or then you might have found yourself in a situation where you get your *life* essentials stolen and are directed to your CCTV operator, but this can be a huge hassle when you belong to colleges with ***Huge*** Campuses. Now you can do the foolish thing by checking the hundreds of hours of footage through the dozens of cameras or you can use our ***Project***!!
 
 ## Solution
-We present you ***cap-bot***, a deskptop app capable of running Image Captioning on multiple CCTV camera footages around huge enterprises and storing the said captions in a convenient log.<br/>
-***Image Captioning***, the new and hip way of understanding images!! Its being used in Automative Vehicles! Its being used by ***GOOGLE***! Its being used in ***FACEBOOK***! But, now we use it here in our own beloved project ***cap-bot***. Image Captioning enables us to capture various details in a picture and put them in a sentance which can be used in Autonomous Vehicle's logging modules, reverse image searches and much more.<br/><br/>
+We present you ***cap-bot***, a desktop app capable of running Image Captioning on multiple CCTV camera footages around huge enterprises and storing the said captions in a convenient log.<br/>
+***Image Captioning***, the new and hip way of understanding images!! Its being used in Automative Vehicles! Its being used by ***GOOGLE***! Its being used in ***FACEBOOK***! But, now we use it here in our own beloved project ***cap-bot***. Image Captioning enables us to capture various details in a picture and put them in a sentence which can be used in Autonomous Vehicle's logging modules, reverse image searches and much more.<br/><br/>
 <img height="300" src="gui/assets/ic.jpeg"><br/><br/>
 We here are implementing an Image Captioning model working on the ***VGG-16*** Network which we trained on the ***Flickr8K*** dataset, which gets its images from an OpenCV module that we would have ideally preferred to work on a ***Key Event Detection*** system but have it working on a ***Time-Period System***.<br/><br/>
 <img src="gui/assets/data.jpeg">
