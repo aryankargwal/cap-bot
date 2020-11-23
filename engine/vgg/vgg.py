@@ -9,23 +9,18 @@ from keras.layers import Input
 from keras.layers.merge import add
 from keras.applications.vgg16 import VGG16, preprocess_input
 
-
 file = open("models/vgg/wordtoix.txt", "r")
 contents = file. read()
 wordtoix = ast. literal_eval(contents)
 file. close()
-#print(type(wordtoix))
 
 file = open("models/vgg/ixtoword.txt", "r")
 contents = file. read()
 ixtoword = ast. literal_eval(contents)
 file. close()
-#print(type(ixtoword))
 
 base_model = VGG16(weights = 'imagenet')
 base_model = Model(base_model.input, base_model.layers[-2].output)
-
-
 
 def preprocess_img(img_path):
     #vgg16 excepts img in 224*224
@@ -42,7 +37,6 @@ def encode(image):
     vec = np.reshape(vec, (vec.shape[1]))
     return vec.reshape(1,4096)
 
-
 ip1 = Input(shape = (4096, ))
 fe1 = Dropout(0.2)(ip1)
 fe2 = Dense(256, activation = 'relu')(fe1)
@@ -55,7 +49,7 @@ decoder2 = Dense(256, activation = 'relu')(decoder1)
 outputs = Dense(1652, activation = 'softmax')(decoder2)
 model = Model(inputs = [ip1, ip2], outputs = outputs)
 
-model.load_weights('models/vgg/image-caption-weights8.h5')
+model.load_weights('image-caption-weights8.h5')
 
 def greedy_search(pic):
     max_length = 34
@@ -72,8 +66,6 @@ def greedy_search(pic):
     final = start.split()
     final = final[1:-1]
     return final
-
-#greedy_search(img)
 
 def test(img):
   img = encode(img)
