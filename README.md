@@ -1,6 +1,5 @@
 # cap-bot||Team Missing Colon <img align="right" height="60" src="gui/assets/logo.png"><br/>
  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
- [![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://github.com/aryankargwal/cap-bot/graphs/contributors/)
  <br/>
 ## Problem Statement
 ***‘OH NO! Where is my laptop?? Who stole it??’***<br/>
