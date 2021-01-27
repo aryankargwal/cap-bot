@@ -49,7 +49,7 @@ This project is under the Apache License. See [LICENSE](LICENSE) for Details.
 ## Authors
 <table>
   <tr>
-       <td align="center"><img src="https://media-exp1.licdn.com/dms/image/C4E03AQGHeFQvUz5EAQ/profile-displayphoto-shrink_200_200/0?e=1611792000&v=beta&t=B2HH0vG6NBYS70k21lfk2Coz54QkvbaOrZS0XReS2JQ" width="210px;" height="230px;" alt=""/><br /><sub><b>Aryan Kargwal</b></sub></a><br /><p align="center">
+       <td align="center"><img src="https://media-exp1.licdn.com/dms/image/C4E03AQF-jQx69fbYiw/profile-displayphoto-shrink_400_400/0/1610317317984?e=1617235200&v=beta&t=GC97oMW4E2B5OF0ahkBXL30yCS6h2MHgbdZF2AeSVnc" width="210px;" height="230px;" alt=""/><br /><sub><b>Aryan Kargwal</b></sub></a><br /><p align="center">
     
    <a href="https://www.linkedin.com/in/aryan-kargwal-2550561a2/" alt="Linkedin"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/linkedin-fill.svg"></a>
   </p>
