@@ -50,13 +50,13 @@ This project is under the Apache License. See [LICENSE](LICENSE) for Details.
 ## Authors
 <table>
   <tr>
-       <td align="center"><img src="https://media-exp1.licdn.com/dms/image/C4E03AQF-jQx69fbYiw/profile-displayphoto-shrink_400_400/0/1610317317984?e=1617235200&v=beta&t=GC97oMW4E2B5OF0ahkBXL30yCS6h2MHgbdZF2AeSVnc" width="210px;" height="230px;" alt=""/><br /><sub><b>Aryan Kargwal</b></sub></a><br /><p align="center">
+       <td align="center"><img src="https://media-exp1.licdn.com/dms/image/C4E03AQF-jQx69fbYiw/profile-displayphoto-shrink_400_400/0/1610317317984?e=1617235200&v=beta&t=GC97oMW4E2B5OF0ahkBXL30yCS6h2MHgbdZF2AeSVnc" width="217px;" height="230px;" alt=""/><br /><sub><b>Aryan Kargwal</b></sub></a><br /><p align="center">
     
    <a href="https://www.linkedin.com/in/aryan-kargwal-2550561a2/" alt="Linkedin"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/linkedin-fill.svg"></a>
   </p>
 </td>
       
-   <td align="center"><img src="https://media-exp1.licdn.com/dms/image/C5603AQFCctkhnahzoA/profile-displayphoto-shrink_800_800/0?e=1611792000&v=beta&t=BUN04pA5DksAkUe8EhpCPGoSe3PFuETyzpIz8KMhZbA" width="210px;" height="230px;" alt=""/><br /><sub><b>Srijarko Roy</b></sub></a><br />
+   <td align="center"><img src="https://media-exp1.licdn.com/dms/image/C5603AQFCctkhnahzoA/profile-displayphoto-shrink_800_800/0/1592055341403?e=1618444800&v=beta&t=zndkSpm62l4jOZ9VVg2Qd_5VDKirdDRWFzqIRhFTNUo" width="218px;" height="230px;" alt=""/><br /><sub><b>Srijarko Roy</b></sub></a><br />
     <p align="center">
    
    <a href="https://www.linkedin.com/in/srijarko-roy-9193751b0/" alt="Linkedin"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/linkedin-fill.svg"></a>
@@ -64,14 +64,14 @@ This project is under the Apache License. See [LICENSE](LICENSE) for Details.
 
 </td>
    
-   <td align="center"><img src="https://media-exp1.licdn.com/dms/image/C5103AQE5CkDeJQ8mmQ/profile-displayphoto-shrink_800_800/0?e=1611792000&v=beta&t=4xDqX13gQDrCEXJjKdXRnyDBwuWdeRi4PbCAJe5S9tc" width="210px;" height="230px;"  alt=""/><br /><sub><b>Indira Dutta</b></sub></a><br />
+   <td align="center"><img src="https://media-exp1.licdn.com/dms/image/C5103AQE5CkDeJQ8mmQ/profile-displayphoto-shrink_800_800/0/1573304359382?e=1618444800&v=beta&t=92f_MWC9cIgpMjyedPrrLWV0IJzCvA_QlaxTfXhFfKk" width="217px;" height="230px;"  alt=""/><br /><sub><b>Indira Dutta</b></sub></a><br />
 <p align="center">
     
    <a href="https://www.linkedin.com/in/indira-dutta-775445197/" alt="Linkedin"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/linkedin-fill.svg"></a>
   </p>
 </td>
    
-   <td align="center"><img src="https://media-exp1.licdn.com/dms/image/C5603AQE_ev0fCPT0Uw/profile-displayphoto-shrink_800_800/0?e=1611792000&v=beta&t=2vO9evuUmYol4ZzuG3o_IAwZ69Zs0C9s3x-2BLIr8hE" width="240px"; height="230px;" alt=""/><br /><sub><b>Kunal Mundada</b></sub></a><br />
+   <td align="center"><img src="https://media-exp1.licdn.com/dms/image/C5603AQE_ev0fCPT0Uw/profile-displayphoto-shrink_800_800/0/1581639518725?e=1618444800&v=beta&t=TD6Bn6wOruFfeL6PvtHYX3A3poYO7ztuecIxjvRitWg" width="218px"; height="230px;" alt=""/><br /><sub><b>Kunal Mundada</b></sub></a><br />
 <p align="center">
    
    <a href="https://www.linkedin.com/in/kunalmundada/" alt="Linkedin"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/linkedin-fill.svg"></a>
