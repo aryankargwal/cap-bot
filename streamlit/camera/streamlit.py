@@ -1,4 +1,3 @@
-from typing import List
 import streamlit as st
 import cv2
 import csv
@@ -7,8 +6,7 @@ import pandas as pd
 from tensorflow.keras.preprocessing.text import Tokenizer
 import time
 from datetime import datetime
-# from cap_generator import *
-import model
+from cap_generator import *
 
 # To display the webcam feed
 FRAME_WINDOW = st.image([])
@@ -112,7 +110,7 @@ def run_app():
             FRAME_WINDOW.image(frame)
         img = Image.fromarray(frame)
         img = img.resize((224, 224))
-        pred = model.test(img)
+        pred = test(img)
         csvw.write(pred)
         st.write(pred)
         time.sleep(5)
