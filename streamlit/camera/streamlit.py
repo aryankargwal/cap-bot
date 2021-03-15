@@ -5,40 +5,14 @@ import csv
 from PIL import Image
 import pandas as pd
 from tensorflow.keras.preprocessing.text import Tokenizer
-from vgg import *
 import time
 from datetime import datetime
-import pytz
+# from cap_generator import *
+import model
 
 # To display the webcam feed
 FRAME_WINDOW = st.image([])
 TOKENIZER = Tokenizer(num_words=1000, oov_token="<UNK>")
-
-
-def run_app():
-    vid = cv2.VideoCapture(0)
-    # Starts the app, when the button is clicked
-    run = st.checkbox("Run", key="start")
-    show_frame = st.checkbox("Show frames", key="frame")
-    csvw = CSVWorker()
-    while run:
-        _, frame = vid.read()
-        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        if show_frame:
-            FRAME_WINDOW.image(frame)
-        img = Image.fromarray(frame)
-        img = img.resize((224, 224))
-        pred = test(img)
-        csvw.write(pred)
-        st.write(pred)
-        time.sleep(5)
-    vid.release()
-    cv2.destroyAllWindows()
-
-
-def main():
-    run_app()
-
 
 @st.cache(show_spinner=False)
 class CSVWorker:
@@ -124,6 +98,30 @@ class CSVWorker:
             # writing data rows
             csvwriter.writerow(entry)
 
+
+def run_app():
+    vid = cv2.VideoCapture(0)
+    # Starts the app, when the button is clicked
+    run = st.checkbox("Run", key="start")
+    show_frame = st.checkbox("Show frames", key="frame")
+    csvw = CSVWorker()
+    while run:
+        _, frame = vid.read()
+        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        if show_frame:
+            FRAME_WINDOW.image(frame)
+        img = Image.fromarray(frame)
+        img = img.resize((224, 224))
+        pred = model.test(img)
+        csvw.write(pred)
+        st.write(pred)
+        time.sleep(5)
+    vid.release()
+    cv2.destroyAllWindows()
+
+
+def main():
+    run_app()
 
 if __name__ == "__main__":
     main()
