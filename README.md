@@ -1,82 +1,144 @@
-# cap-bot||Team Missing Colon <img align="right" height="60" src="gui/assets/logo.png"><br/>
- [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
- [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
- <br/>
-## Problem Statement
-***‘OH NO! Where is my laptop?? Who stole it??’***<br/>
-***‘Bro don't worry go to the warden, he will help you with the CCTV Footage.’***<br/>
-Now or then you might have found yourself in a situation where you get your *life* essentials stolen and are directed to your CCTV operator, but this can be a huge hassle when you belong to colleges with ***Huge*** Campuses. Now you can do the foolish thing by checking the hundreds of hours of footage through the dozens of cameras or you can use our ***Project***!!
+# capbot
+Repository to hold code for the [cap-bot](https://github.com/aryankargwal/cap-bot) varient that is being presented at the SIIC Defence Hackathon 2021.
+<br>
 
-## Solution
-We present you ***cap-bot***, a desktop app capable of running Image Captioning on multiple CCTV camera footages around huge enterprises and storing the said captions in a convenient log.<br/>
-***Image Captioning***, the new and hip way of understanding images!! Its being used in Automative Vehicles! Its being used by ***GOOGLE***! Its being used in ***FACEBOOK***! But, now we use it here in our own beloved project ***cap-bot***. Image Captioning enables us to capture various details in a picture and put them in a sentence which can be used in Autonomous Vehicle's logging modules, reverse image searches and much more.<br/><br/>
-<img height="300" src="gui/assets/ic.jpeg"><br/><br/>
-We here are implementing an Image Captioning model working on the ***VGG-16*** Network which we trained on the ***Flickr8K*** dataset, which gets its images from an OpenCV module that we would have ideally preferred to work on a ***Key Event Detection*** system but have it working on a ***Time-Period System***.<br/><br/>
-<img src="gui/assets/data.jpeg">
-Now once we have the captions we store them in a database using ***Pandas*** where we have cleverly used the corpus ids of the words so as to ease the search process.
+## Problem Inspiration<br>
+<img src="assets/cctv_system.jpg" width = "500px"><br>
+A plethora of surveillance devices are being used by the Defense Services for supervision and monitoring. However, most of them are manually operated at the cost of enormous amounts of time and manual labour.<br>
+### Check out the [video proposal](https://www.youtube.com/watch?v=nBATYSIb7fs) for the Problem Statement.
+<br>
 
-## Exploring GUI
-***Home Page***<br/>
-<img src="gui/assets/home.gif"><br/>
+## Problem Description<br>
+Present state-of-the-art Surveillance Devices require both consistent manual assistance and time for their successful operation. This results in a considerable loss of manual and technical resources.
+<br>
 
-***Menu Page***<br />
-<img src="gui/assets/menu.gif"><br/>
+## Proposed Solution<br>
+We propose a Deep Learning Application that will be able to solve the above mentioned problems. 
+- Our application named ‘Cap-Bot’ is capable of running Image Captioning on multiple CCTV footages and storing the captions along with the camera number and the time of capture in a convenient log.<Br>
+<img src = "assets/cameraui.jpg" width = "500px"><br>
+- The file of saved captions can then be used to look up for incidents from any instant of time just by entering a few keywords.  The returned camera number and time slot can then be used to obtain the required CCTV footage.<br>
+<img src = "assets/search_tab.png" width = "500px"><br>
+  
+### Check out the [Project Proposal](https://www.youtube.com/watch?v=Sr8dNQMBRZI) for our product.
 
-***CCTV Page*** <br />
-<img src="gui/assets/cctv.gif">
+## Advantages and Features
+- Interface to map CCTV Location in a defined area and eventually help single out points of interest.<br>
+<img src = "assets/locations.png" width = "500px"><br>
+- Since our model relies on Deep Learning, the time can be reduced considerably as we are resorting to an automatic searching operation.<br>
+<img src = "assets/dl.png" width = "500px"><br>
+- Since the information is purely textual, the encryption of information is way easier than pictorial.<br>
+<img src = "assets/encrypt.png" width = "500px"><br>
+  
+## Steps of Deployment
+- [x] Training the Model
+- [x] Write the Search Module
+- [x] Captioning UI
+- [x] Search UI
+- [x] Perfecting Search feature 
+- [x] Resolving Backend
+- [x] Encryption of Generation Captions<br>
+<i>Extra Feature</i>
+- [ ] CCTV Localization with results
 
-## Running the App
-Firstly, let us enter the folder for the GUI.
-```
-cd gui
-```
-Now, we will install the node modules which are listed in the package.json using
-```
-npm install
-```
-Now. we can finally run the app using
-```
-npm start
-```
 
-## Steps for Development
-- [x] Making GUI using HTML CSS .
-- [x] Add a python script to tap into external camera.
-- [x] Finishing the Image Captioning Model.
-- [x] Make the Search Module.
-- [ ] Sort the backend.
-## License 
+## Using the deployed version of the web application
+Please download the <a href = "https://drive.google.com/drive/folders/10RaV7DTsFVgdYeJZIyveyeJKhfvFiKT2?usp=sharing">Model Checkpoints</a> and move the file to the <a href = "https://github.com/aryankargwal/capbot2.0/tree/main/camera">camera</a> folder.
+
+- Setting up the Python Environment with dependencies 
+
+        pip install -r requirements.txt
+- Cloning the Repository: 
+
+        git clone https://github.com/aryankargwal/capbot2.0
+- Entering the directory for captioning: 
+
+        cd capbot2.0/camera
+- Running the captioning web application:
+
+        streamlit run feed.py
+- Entering the directory for searching: 
+
+        cd capbot2.0/search
+- Running the searching web application:
+
+        streamlit run search.py
+- Stopping the web application from the terminal
+
+        Ctrl+C
+        
+<hr>
+
+## License
 This project is under the Apache License. See [LICENSE](LICENSE) for Details.
-## Authors
+
+## Contributors
+
 <table>
-  <tr>
-       <td align="center"><img src="https://media-exp1.licdn.com/dms/image/C4E03AQF-jQx69fbYiw/profile-displayphoto-shrink_400_400/0/1610317317984?e=1617235200&v=beta&t=GC97oMW4E2B5OF0ahkBXL30yCS6h2MHgbdZF2AeSVnc" width="210px;" height="230px;" alt=""/><br /><sub><b>Aryan Kargwal</b></sub></a><br /><p align="center">
-    
-   <a href="https://www.linkedin.com/in/aryan-kargwal-2550561a2/" alt="Linkedin"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/linkedin-fill.svg"></a>
-  </p>
-</td>
-      
-   <td align="center"><img src="https://media-exp1.licdn.com/dms/image/C5603AQFCctkhnahzoA/profile-displayphoto-shrink_800_800/0?e=1611792000&v=beta&t=BUN04pA5DksAkUe8EhpCPGoSe3PFuETyzpIz8KMhZbA" width="210px;" height="230px;" alt=""/><br /><sub><b>Srijarko Roy</b></sub></a><br />
-    <p align="center">
-   
-   <a href="https://www.linkedin.com/in/srijarko-roy-9193751b0/" alt="Linkedin"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/linkedin-fill.svg"></a>
-  </p>
+<tr align="center">
+<td>
 
-</td>
-   
-   <td align="center"><img src="https://media-exp1.licdn.com/dms/image/C5103AQE5CkDeJQ8mmQ/profile-displayphoto-shrink_800_800/0?e=1611792000&v=beta&t=4xDqX13gQDrCEXJjKdXRnyDBwuWdeRi4PbCAJe5S9tc" width="210px;" height="230px;"  alt=""/><br /><sub><b>Indira Dutta</b></sub></a><br />
-<p align="center">
-    
-   <a href="https://www.linkedin.com/in/indira-dutta-775445197/" alt="Linkedin"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/linkedin-fill.svg"></a>
-  </p>
-</td>
-   
-   <td align="center"><img src="https://media-exp1.licdn.com/dms/image/C5603AQE_ev0fCPT0Uw/profile-displayphoto-shrink_800_800/0?e=1611792000&v=beta&t=2vO9evuUmYol4ZzuG3o_IAwZ69Zs0C9s3x-2BLIr8hE" width="240px"; height="230px;" alt=""/><br /><sub><b>Kunal Mundada</b></sub></a><br />
-<p align="center">
-   
-   <a href="https://www.linkedin.com/in/kunalmundada/" alt="Linkedin"><img src="https://raw.githubusercontent.com/jayehernandez/jayehernandez/3f5402efef9a0ae89211a6e04609558e862ca616/readme/linkedin-fill.svg"></a>
-  </p>
-</td>
-    </tr>
-    </table>
+Aryan Kargwal
 
+<p align="center">
+<img src = "https://media-exp1.licdn.com/dms/image/C4E03AQF-jQx69fbYiw/profile-displayphoto-shrink_200_200/0/1610317317984?e=1621468800&v=beta&t=DA1te6zagqlPJarwqm3iDawBUn3n2QCXesSi75httIU"  height="120" alt="Aryan Kargwal">
+</p>
+<p align="center">
+<a href = "https://github.com/aryankargwal"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/aryan-kargwal-2550561a2/">
+<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
+</a>
+</p>
+</td>
+
+<td>
+
+Indira Dutta
+
+<p align="center">
+<img src = "https://media-exp1.licdn.com/dms/image/C5103AQE5CkDeJQ8mmQ/profile-displayphoto-shrink_200_200/0/1573304359382?e=1621468800&v=beta&t=-uptIYAUuX4JoRcYazPr6R_HiKrZxeMjndRtMuc3YEQ"  height="120" alt="Indira Dutta">
+</p>
+<p align="center">
+<a href = "https://github.com/indiradutta"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/indira-dutta-775445197/">
+<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
+</a>
+</p>
+</td>
+
+<td>
+
+Kunal Mundada
+
+<p align="center">
+<img src = "https://media-exp1.licdn.com/dms/image/C5603AQE_ev0fCPT0Uw/profile-displayphoto-shrink_200_200/0/1581639518725?e=1621468800&v=beta&t=ievx9n9yClEOkaW6nQw5CT8AhE6bWVgWh-We5nK9_vY"  height="120" alt="Rusali Saha">
+</p>
+<p align="center">
+<a href = "https://github.com/AlKun25"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/kunalmundada/">
+<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
+</a>
+</p>
+</td>
+
+<td>
+
+Srijarko Roy
+
+<p align="center">
+<img src = "https://media-exp1.licdn.com/dms/image/C5603AQFCctkhnahzoA/profile-displayphoto-shrink_200_200/0/1592055341403?e=1621468800&v=beta&t=NkSQlaxskFl2fO-34vIp4D45vI7mOWwyWyjiiuIu73A"  height="120" alt="person">
+</p>
+<p align="center">
+<a href = "https://github.com/srijarkoroy"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://www.linkedin.com/in/srijarko-roy-9193751b0/">
+<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
+</a>
+</p>
+</td>
+  </table>
+</tr>
+  </table>
+
+
+<p align="center">
+crafted with <span style="color: #8b0000;">&hearts;</span> by team <b>Missing-Colon</b>
+</p>
