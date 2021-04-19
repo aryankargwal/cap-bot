@@ -1,4 +1,4 @@
-# capbot-siic
+# capbot
 Repository to hold code for the [cap-bot](https://github.com/aryankargwal/cap-bot) varient that is being presented at the SIIC Defence Hackathon 2021.
 <br>
 
