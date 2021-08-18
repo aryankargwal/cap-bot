@@ -5,7 +5,7 @@ Repository to hold code for the [cap-bot](https://github.com/aryankargwal/cap-bo
 ## Problem Inspiration<br>
 <img src="assets/cctv_system.jpg" width = "500px"><br>
 A plethora of surveillance devices are being used by the Defense Services for supervision and monitoring. However, most of them are manually operated at the cost of enormous amounts of time and manual labour.<br>
-### Check out the [video proposal](https://www.youtube.com/watch?v=nBATYSIb7fs) for the Problem Statement.
+Check out the [video proposal](https://www.youtube.com/watch?v=nBATYSIb7fs) for the Problem Statement.
 <br>
 
 ## Problem Description<br>
